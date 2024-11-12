@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <a href="./index.html">index</a>
+    
+    <a href="../mile stone 3 dynamic resume/index.html">milestone 3</a>
+    <a href="../mile stone 4 editable resume/index.html">milestone 4</a>
+    <a href="../mile stone 5 shareable resume/index.html">milestone 5</a>
+    <br>
+    <link rel="stylesheet" href="https://milestone-5-shareable-resume-bice.vercel.app/"target="_blank">
+</head>
+<body>
+    <h1>Editable Resume Builder</h1>
+    <form id="resume-form">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Education</legend>
+        <label for="education">Education:</label>
+        <textarea name="" id="education" placeholder="Enter your education" rows="4 required"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Experience</legend>
+        <label for="experience">Experience:</label>
+        <textarea name="" id="experience" placeholder="Enter your work experience" rows="4 required"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Skills</legend>
+        <label for="skills">skill:</label>
+        <textarea name="" id="skills" placeholder="Enter your skills" rows="4 required"></textarea>
+    </fieldset>
+
+    <button type="submit"> <b>Generate Resume </b></button>
+
+    </form>
+    <br>
+    <!-- Editable Resume -->
+     <div id="resume-display" contenteditable="true"></div>
+     <!--Editable resume will be generated below -->
+
+     <script src="main.js"></script>
+
+</body>
+</html>
